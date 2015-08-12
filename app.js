@@ -25,7 +25,11 @@ app.get('/cheeses', function (req, res) {
 
 app.post('/cheeses', function (req, res) {
     //post a new cheese to the database of cheeses and route to cheeses
-})
+});
+
+app.put('/cheeses/:id', function (req, res) {
+    //edit a cheese in the database and route to that cheese's page
+});
 
 app.listen(3000, function(){
     console.log('listening on port 3000!')
